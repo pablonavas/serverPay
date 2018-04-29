@@ -32,7 +32,7 @@ class ConexionBD {
     
     public static function abrirConexion(){
         $unaConexion = new ConexionBD();
-        $dbcon = pg_connect("host=localhost port=5432 dbname=pagos user=postgres password=zaq1xsw2",PGSQL_CONNECT_FORCE_NEW);
+        $dbcon = pg_connect("host=127.0.0.1 port=5432 dbname=pagos user=postgres password=zaq1xsw2",PGSQL_CONNECT_FORCE_NEW);
         $unaConexion->setConexion($dbcon);
         return $unaConexion;
     }
